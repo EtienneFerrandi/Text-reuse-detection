@@ -14,7 +14,7 @@ AU_s_9=TextReuseTextDocument(file = "~/txt_unlemmat/AU_s_9.txt", tokenizer = tok
 CAE_s_100A=TextReuseTextDocument(file = "~/txt_unlemmat/CAE_s_100A.txt", tokenizer = tokenize_ngrams, n=3)
 CAE_s_109=TextReuseTextDocument(file = "~/txt_unlemmat/C_CAE_s_109.txt", tokenizer = tokenize_ngrams, n=3)
 CAE_s_142=TextReuseTextDocument(file = "~/txt_unlemmat/C_CAE_s_142.txt", tokenizer = tokenize_ngrams, n=3)
-#détection de remplois dans un sermon de Césaire d'Arles de celui d'Augustin en utilisant l'algorithme de Smith-Waldermann 
+#détection de remplois par Césaire d'Arles d'un sermon d'Augustin en utilisant l'algorithme de Smith-Waldermann 
 #utilisé traditionnellement en biologie pour rapprocher des séquences génétiques
 align_local(AU_s_9, CAE_s_100A, match = 1L)
 
