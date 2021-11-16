@@ -18,7 +18,8 @@ CAE_s_142=TextReuseTextDocument(file = "~/txt_unlemmat/C_CAE_s_142.txt", tokeniz
 #utilisé traditionnellement en biologie pour rapprocher des séquences génétiques
 align_local(AU_s_9, CAE_s_100A, match = 1L)
 
-#détection de remplois sur un passage précis recopié par Césaire du sermon 9 d'Augustin avec l'usage d'une fonction MinHash
+#détection de remplois sur un passage précis recopié par Césaire du sermon 9 d'Augustin avec 
+#une approche LSH de recherche des plus proches voisins au sein d'extraits identifiés au préalable comme ressemblants
 
 #détermination d'un seuil de similarité de Jaccard en-dessous duquel deux textes ne peuvent être considérés comme proches
 lsh_threshold(h=240, b=80) 
