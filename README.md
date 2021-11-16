@@ -27,7 +27,6 @@ lsh_probability(h = 240, b =  80, s = 0.6)
 
 e=read.csv(file = "AU_s_9,7&CAE_s_100A_compa.csv", sep = "\t", quote = "", header = TRUE)
 corpus3=TextReuseCorpus(text=as.character(e[ ,2]), meta = list(title = "AU_CAE"), 
-tokenizer=tokenize_ngrams, n=2, minhash_func = minhash)
 buckets = lsh(corpus3, bands = 80) #préparation des "galets" et comparaison des paires candidates identifiées dans les extraits
 candidates = lsh_candidates(buckets)
 comps = lsh_compare(candidates, corpus3, jaccard_similarity)
